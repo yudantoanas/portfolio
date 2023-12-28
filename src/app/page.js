@@ -76,7 +76,7 @@ export default function Home() {
           <div className="col-span-7 place-self-center text-center sm:text-left">
             <h1 className='text-black mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold'>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500">
-                Hi, I'm{" "}
+                Hi, I&apos;m
               </span>
               <br></br>
               <TypeAnimation
@@ -107,6 +107,7 @@ export default function Home() {
                           src={stack.path}
                           width={30}
                           height={30}
+                          alt='icon'
                         />
                         <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute opacity-0 mt-1 mx-auto">{stack.name}</span>
                       </div>
