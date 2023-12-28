@@ -59,7 +59,6 @@ const stacks = [
     path: "https://raw.githubusercontent.com/github/explore/8baf984947f4d9c32006bd03fa4c51ff91aadf8d/topics/android/android.png?size=48",
   },
 ]
-
 export default function Home() {
   // Create a single supabase client for interacting with your database
   const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
@@ -109,7 +108,7 @@ export default function Home() {
                           height={30}
                           alt='icon'
                         />
-                        <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute opacity-0 mt-1 mx-auto">{stack.name}</span>
+                        <span className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute opacity-0 mt-1 mx-auto">{stack.name}</span>
                       </div>
                     </li>
                   )
