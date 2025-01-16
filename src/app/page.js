@@ -116,16 +116,13 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <Link download={"resume.pdf"}
-                href={publicUrl}
-                target='_blank'>
-                <button
-                  className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:bg-slate-800 text-white">
+              <Link href={"https://docs.google.com/document/d/1RxaIzr1OFNqKlF1mlpOjU825Lw46UMhZhMgJu7gErpI/edit?usp=sharing"}>
+                <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:bg-slate-800 text-white">
                   <FaDownload className='inline-block mr-2' />
-                  Download CV
+                  My Resume
                 </button>
               </Link>
-              <Link href={"https://yudanto.notion.site/yudanto/761b890cfd4a4ca699bfb1c1040a4c19?v=8da033def2cf44b2aab6c1c02d861b2b"}>
+              <Link href={"https://docs.google.com/document/d/1sxARGiIkPFLKMEikDXrAkr87RXVBS2K38CXxmH4rHq8/edit?usp=sharing"}>
                 <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:bg-slate-800 text-black mt-3">
                   <span className="block bg-slate-100 rounded-full px-5 py-2">
                     <FaLaptopCode className='inline-block mr-2' />
