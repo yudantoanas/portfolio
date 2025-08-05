@@ -116,7 +116,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <Link href={"https://docs.google.com/document/d/1RxaIzr1OFNqKlF1mlpOjU825Lw46UMhZhMgJu7gErpI/edit?usp=sharing"}>
+              <Link href={"https://drive.google.com/file/d/1y4FfFELgOOVc_CLOoSSGp7sT3wYkOi5w/view?usp=sharing"}>
                 <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 to-green-500 hover:bg-slate-800 text-white">
                   <FaDownload className='inline-block mr-2' />
                   My Resume
