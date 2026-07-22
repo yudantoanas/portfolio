@@ -66,22 +66,19 @@ const SkillCard: React.FC<{ skill: Skill; index: number }> = ({ skill, index }) 
       className={`${styles.card} animate-fade-in`}
       style={{ animationDelay: `${index * 0.03}s` }}
     >
-      <div className={styles.cardHeader}>
-        <span className={styles.category}>{skill.category}</span>
-        <span className={styles.icon}>
-          {logoUrl ? (
-            <img
-              src={logoUrl}
-              alt={`${skill.name} logo`}
-              className={styles.logoImg}
-              onError={() => setHasError(true)}
-            />
-          ) : (
-            <IconComponent size={18} />
-          )}
-        </span>
-      </div>
-      <div className={styles.name}>{skill.name}</div>
+      <span className={styles.icon}>
+        {logoUrl ? (
+          <img
+            src={logoUrl}
+            alt={`${skill.name} logo`}
+            className={styles.logoImg}
+            onError={() => setHasError(true)}
+          />
+        ) : (
+          <IconComponent size={22} />
+        )}
+      </span>
+      <span className={styles.name}>{skill.name}</span>
     </div>
   );
 };

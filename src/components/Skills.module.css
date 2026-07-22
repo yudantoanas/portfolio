@@ -24,7 +24,7 @@
   display: flex;
   justify-content: center;
   gap: 0.8rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -56,7 +56,7 @@
   display: flex;
   overflow-x: auto;
   gap: 1.5rem;
-  padding: 1rem 0.5rem 2rem;
+  padding: 0.5rem 0.5rem 1.5rem;
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-primary) var(--bg-secondary);
@@ -79,14 +79,17 @@
 .card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
-  padding: 1.5rem;
+  padding: 0.85rem 1.25rem;
   border-radius: 12px;
   box-shadow: var(--card-shadow);
   transition: all var(--transition-speed);
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
-  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  height: 56px;
 }
 
 .card::before {
@@ -95,7 +98,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
   transform: scaleX(0);
   transform-origin: left;
@@ -103,7 +106,7 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: var(--accent-primary);
 }
 
@@ -111,26 +114,11 @@
   transform: scaleX(1);
 }
 
-.category {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--accent-primary);
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5px;
-}
-
 .name {
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-primary);
-}
-
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.75rem;
+  white-space: nowrap;
 }
 
 .icon {
@@ -138,6 +126,8 @@
   transition: color var(--transition-speed), transform var(--transition-speed);
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .card:hover .icon {
@@ -146,8 +136,8 @@
 }
 
 .logoImg {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   transition: transform var(--transition-speed);
 }

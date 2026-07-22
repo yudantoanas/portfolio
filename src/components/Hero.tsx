@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
           <pre className={styles.codeBody}>
             <code>
               <span className={styles.keyword}>object</span>{" "}
-              <span className={styles.codeClass}>Me</span> &#123;
+              <span className={styles.codeClass}>Profile</span> &#123;
               <br />
               &nbsp;&nbsp;<span className={styles.keyword}>val</span> greeting ={" "}
               <span className={styles.string}>
@@ -34,10 +34,10 @@ export const Hero: React.FC = () => {
               <span className={styles.string}>"Jakarta, Indonesia 📍"</span>
               <br />
               &nbsp;&nbsp;<span className={styles.keyword}>val</span> experience
-              = <span className={styles.string}>"3+ Years"</span>
+              = <span className={styles.string}>"5+ Years"</span>
               <br />
               &nbsp;&nbsp;<span className={styles.keyword}>val</span> expertise
-              = <span className={styles.keyword}>listOf</span>(<br />
+              = <span className={styles.string}>listOf</span>(<br />
               &nbsp;&nbsp;&nbsp;&nbsp;
               <span className={styles.string}>"Android / iOS"</span>,<br />
               &nbsp;&nbsp;&nbsp;&nbsp;
@@ -50,15 +50,33 @@ export const Hero: React.FC = () => {
               <br />
               <br />
               &nbsp;&nbsp;<span className={styles.keyword}>fun</span>{" "}
+              <span className={styles.function}>viewSkills</span>() ={" "}
+              <a href="#skills" className={styles.codeBtnPrimary}>
+                Skills.show()
+              </a>
+              <br />
+              &nbsp;&nbsp;<span className={styles.keyword}>fun</span>{" "}
+              <span className={styles.function}>viewExperience</span>() ={" "}
+              <a href="#experience" className={styles.codeBtnPrimary}>
+                Experience.show()
+              </a>
+              <br />
+              &nbsp;&nbsp;<span className={styles.keyword}>fun</span>{" "}
               <span className={styles.function}>viewProjects</span>() ={" "}
               <a href="#projects" className={styles.codeBtnPrimary}>
                 Projects.show()
               </a>
               <br />
               &nbsp;&nbsp;<span className={styles.keyword}>fun</span>{" "}
-              <span className={styles.function}>connect</span>() ={" "}
-              <a href="#contact" className={styles.codeBtnSecondary}>
-                Contact.open()
+              <span className={styles.function}>viewEducation</span>() ={" "}
+              <a href="#education" className={styles.codeBtnPrimary}>
+                Education.show()
+              </a>
+              <br />
+              &nbsp;&nbsp;<span className={styles.keyword}>fun</span>{" "}
+              <span className={styles.function}>sayHello</span>() ={" "}
+              <a href="#contact" className={styles.codeBtnPrimary}>
+                Contact.me()
               </a>
               <br />
               &#125;
