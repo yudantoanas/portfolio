@@ -1,0 +1,103 @@
+.education {
+  padding: 100px 2rem;
+  background-color: var(--bg-secondary);
+  transition: background-color var(--transition-speed);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  transition: transform var(--transition-speed);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.iconWrapper {
+  background-color: var(--accent-glow);
+  color: var(--accent-primary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.uniName {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.degree {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.major {
+  color: var(--text-muted);
+}
+
+.gpa {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--border-color);
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .iconWrapper {
+    margin-bottom: 1rem;
+  }
+
+  .gpa {
+    margin: 0.5rem auto 0;
+  }
+}
