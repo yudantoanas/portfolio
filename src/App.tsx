@@ -1,4 +1,4 @@
-import { Header } from "./components/Header";
+import { ThemeToggle } from "./components/ThemeToggle";
 import { Hero } from "./components/Hero";
 import { Skills } from "./components/Skills";
 import { Experience } from "./components/Experience";
@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
-      <Header />
+      <ThemeToggle />
       <main
         style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}
       >
